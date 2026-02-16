@@ -3,26 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <title>usapico Apps</title>
-<style>
 body {
-  font-family: sans-serif;
-  max-width: 700px;
-  margin: 40px auto;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 720px;
+  margin: 60px auto;
+  line-height: 1.7;
+  color: #222;
 }
-h1 { border-bottom: 2px solid #000; }
-.app { margin-bottom: 24px; }
-</style>
+
+h1 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+}
+
+.app-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f3f3f3;
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+.app-card img {
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+}
+
+.app-info h2 {
+  margin: 0 0 6px 0;
+}
+
+.app-info p {
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.tags span {
+  display: inline-block;
+  background: #ddd;
+  padding: 4px 10px;
+  margin-right: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
 </head>
 <body>
 
 <h1>usapico Apps</h1>
 <p>個人でAndroidアプリを開発しています。</p>
 
-<div class="app">
-<h2>Narou Viewer</h2>
-<p>小説家になろう作品を快適に読むためのビューア。</p>
+<div class="app-card">
+  <img src="snview_icon.png">
+  <div class="app-info">
+    <h2>SNVIEW</h2>
+    <p>小説家になろうの公式サイトを見るアプリ</p>
+
+    <div class="tags">
+      <span>Kotlin</span>
+      <span>個人開発</span>
+      <span>読書</span>
+    </div>
+  </div>
 </div>
+
 
 <div class="app">
 <h2>Pokemon Wordle</h2>
